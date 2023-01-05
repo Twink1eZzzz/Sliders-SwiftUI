@@ -10,7 +10,7 @@ let package = Package(
         // Products define the executables and libraries produced by a package, and make them visible to other packages.
         .library(
             name: "Sliders",
-            targets: ["Sliders-SwiftUI"]),
+            targets: ["Sliders"]),
     ],
     dependencies: [
         .package(url: "https://github.com/kieranb662/CGExtender.git", from: "1.0.4"),
@@ -27,6 +27,6 @@ let package = Package(
             dependencies: ["CGExtender", "SwiftUI-Shapes", "SwiftUI-bez"]),
         .testTarget(
             name: "SlidersTests",
-            dependencies: ["Sliders-SwiftUI"]),
+            dependencies: ["Sliders"]),
     ]
 )
